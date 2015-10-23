@@ -1,0 +1,15 @@
+{
+    "source": "./",
+    "destination": "./documentation",
+    "excludes": ["config.js", "node_modules", "documentation", "\\.example\\.(js)$", "Gruntfile.js", "src", "tasks"],
+    "index": "./README.md",
+    "package": "./package.json",
+    "coverage": true,
+    "includeSource": true,
+    "title": "GTA-MP Default Package game mode",
+    "lint": true,
+    "manual": {
+        "changelog": ["./CHANGELOG.md"],
+        "installation": ["./INSTALLATION.md"]
+    }
+}
