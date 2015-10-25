@@ -54,7 +54,6 @@ export default class CCommandManager extends CManager {
     */
     manage(player, command, args) {
         let lowerCommand = command.toLowerCase();
-        args.unshift(player);
 
         if(this.commands.has(lowerCommand)) {
             let cmd = this.commands.get(lowerCommand);
