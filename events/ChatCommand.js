@@ -9,12 +9,12 @@
 
 /**
  * ChatCommand event function
- * @param {Player} player player object
+ * @param {Object} player player object
  * @param {String} command the command
  * @return {void}
  */
 export default function(player, command) {
-    let args = command.match(/('(\\'|[^'])*'|"(\\"|[^"])*"|\/(\\\/|[^\/])*\/|[\w-]+)/g) || [];
+    let args = command.split(/[ ]+/);
 
     // Remove the commandName from the args array
     let commandName = args.splice(0, 1)[0];

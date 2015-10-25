@@ -47,7 +47,7 @@ export default class CCommandManager extends CManager {
 
     /**
     * Called by the ChatCommand event
-    * @param {Player} player the player who called the event
+    * @param {Object} player the player who called the event
     * @param {String} command the command
     * @param {Array<string>} args the arguments
     * @return {void}
@@ -58,6 +58,7 @@ export default class CCommandManager extends CManager {
         if(this.commands.has(lowerCommand)) {
             let cmd = this.commands.get(lowerCommand);
             cmd(player, args);
+            return true;
         } else {
             return false;
         }

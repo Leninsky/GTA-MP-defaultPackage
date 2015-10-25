@@ -9,10 +9,10 @@
 
 /**
  * ChatMessage event function
- * @param {Player} player player object
+ * @param {Object} player player object
  * @param {String} message the message
  * @return {void}
  */
 export default function(player, message) {
-    // Nothing yet
+    return false;
 }
